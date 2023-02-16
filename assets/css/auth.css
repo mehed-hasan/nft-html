@@ -1,4 +1,4 @@
-@import url('/assets/css/common.css');
+@import url('./common.css');
 
 .sign_up_header .heading_wrapper{
     border-bottom: 1px solid var(--form-border);

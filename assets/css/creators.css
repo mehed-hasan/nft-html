@@ -1,4 +1,4 @@
-@import url('/assets/css/common.css');
+@import url('./common.css');
 
 .cover_image{
     min-height: 300px;

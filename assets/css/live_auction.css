@@ -1,4 +1,4 @@
-@import url('/assets/css/common.css');
+@import url('./common.css');
 
 .author_info img{
     width: 25px;
