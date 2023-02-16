@@ -1,0 +1,118 @@
+@import url('/assets/css/common.css');
+
+.author_info img{
+    width: 25px;
+}
+
+.work_details{
+    max-width: 542px;
+    width: 100%;
+}
+
+.author_info h6{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.author_info  p{
+    font-size: 12px;
+}
+.seller_and_buyer_info{
+    position: relative;
+}
+.border{
+    width: 1px;
+}
+.tab_holder li button:hover, .tab_holder li button.active:hover{
+    border: 1px solid transparent !important;
+    color: var(--secondary-color);
+
+
+}
+.tab_holder li button.active{
+    border: 1px solid transparent !important;
+    color: #C8C8C8;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary-color);
+    opacity: .8;
+}
+.tab_holder li button{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary-color);
+
+}
+.tab_holder{
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.history_card{
+    width: 90%;
+}
+.history_card img{
+    height: 40px;
+    width: 40px;
+}
+.history_card h4{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px; 
+    color: var(--secondary-color);
+}
+.history_card p{
+    font-weight: 600;
+font-size: 16px;
+}
+.history_card{
+    padding: 10px 0px;
+}
+.history_card{
+    border-bottom: 1px solid var(--secondary-color);
+}
+.creator_image{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#myTabContent .row div:nth-child(even) .history_card{
+    margin-left: auto ;
+}
+
+
+
+
+
+@media screen and (max-width:992px){
+   .history_info{
+    line-height: 25px;
+   }
+   #myTabContent .row div:nth-child(2n) .history_card{
+    margin-left: unset !important;
+   }
+   }
+@media screen and (max-width:768px){
+   .history_info{
+    line-height: 25px;
+   }
+   }
+
+@media screen and (max-width:468px){
+    .button-group{
+       display: inline !important;
+    }
+    .button-group>a{
+       width: 100% !important;
+       margin-bottom: 10px;
+    }
+   
+    .button-group div {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       gap: 10px;
+    }
+    .button-group div a{
+       width: 50%;
+   
+    }
+   }

@@ -1,0 +1,73 @@
+@import url('/assets/css/common.css');
+
+.sign_up_header .heading_wrapper{
+    border-bottom: 1px solid var(--form-border);
+    margin-bottom: 50px;
+
+}
+.sign_up_header h2{
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-1, .form-2{
+    border: 1px solid var(--form-border);
+    padding: 24px;
+    border-radius: 5px;
+    border-radius: 18px;
+}
+
+.form-1 h3, .form-2 h3{
+margin-bottom: 24px;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+}
+
+.form-group input, .form-group select{
+border: 1px solid #DEDEDE;
+border-radius: 5px;
+padding: 12px 10px;
+margin-bottom: 16px;
+}
+.form-group label{
+    margin-bottom: 8px;
+}
+
+.sign_in_btn_group a{
+    margin-bottom: 30px;
+    padding: 15px 15px !important;
+    border: 1px solid #DEDEDE !important;
+}
+.sign_in_btn_group svg path{
+    stroke: var(--secondary-color);
+}
+.sign_up_link{
+    text-decoration: none;
+    color: var(--form-border) !important;
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+    .sign_in_btn_group a{
+        margin-bottom: 30px;
+        padding: 15px 10px;
+    }
+}
+@media screen and (max-width:992px){
+    .form-group input, .form-group select{
+        padding: 8px 8px;
+        }
+
+        .sign_in_btn_group a{
+            font-size: 14px;
+        }
+        .sign_up_btn_group a{
+            font-size: 14px;
+        }
+        .form-1 h3, .form-2 h3 {
+            font-size: 20px;
+            line-height: 28px;
+          }
+}

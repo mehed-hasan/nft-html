@@ -1,0 +1,11 @@
+@import url('/assets/css/common.css');
+#myTabContent .row>div{
+    margin-bottom: 25px;
+}
+
+ .nav-tabs .nav-link.active{
+    background: rgba(190, 25, 84, 1) !important;
+    color: white !important;
+    border: none !important;
+  }
+  

@@ -1,0 +1,86 @@
+@import url('/assets/css/common.css');
+
+  
+ 
+  
+  #counter{
+    position: relative;
+  }
+  
+  #counter .container{
+    background:var(--card-bg);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+  
+  }
+  
+  #counter .row>div{
+    text-align: center;
+    border-left: 1px solid var(--secondary-color) ;
+    color: var(--secondary-color);
+  }
+  
+  #counter .counter-item h3{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  }
+  #counter .counter-item p{
+    font-weight: 500;
+    font-size: 24px;
+  }
+  
+  #about-nft{
+  
+  }
+  #about-nft .about-nft-details h2{
+    font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  max-width: 436px;
+  width: 100%;
+  }
+  #about-nft .about-nft-details p{
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  }
+  
+
+  /* Common media query */
+  
+  @media screen and (max-width:1400px){
+    .home_hero h1{
+        font-size: 45px !important;
+    }
+  }
+
+  @media screen and (max-width:1024px){
+    .home_hero h1{
+        font-size: 30px !important;
+        margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width:1200px){
+    .counter-item h3{
+        font-size: 20px !important;
+    }
+      .counter-item p{
+        font-size: 16px !important;
+      }
+  }
+
+  
+  @media screen and (max-width:992px){
+    .counter-item h3{
+        font-size: 24px !important;
+    }
+    #counter .row>div:nth-of-type(3){
+        border-left: none
+      }
+
+  }
+  @media screen and (max-width:768px){
+
+  }

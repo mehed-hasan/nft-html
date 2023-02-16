@@ -1,0 +1,706 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+  @font-face{
+    font-family: satoshi;
+    src: url('./../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf');
+  }
+
+body{
+  transition: 1s !important;
+}
+
+
+
+body,section,div,h1,h2,h3,h4,h5,h6,p.span,b{
+
+}
+
+  body{
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
+  }
+  main{
+    min-height: 100vh;
+  }
+  p{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .gap-64{
+    height: 64px;
+  }
+
+  .gap-40{
+    height: 40px;
+  }
+  .gap-48{
+    height: 48px;
+  }
+
+svg path{
+    stroke: var(--secondary-color);
+  }
+
+  .logo svg path{
+    fill: var(--secondary-color);
+  }
+  .solicals svg path{
+    stroke: var(--secondary-color);
+  }
+  .btn{
+    padding: 8px 20px !important;
+  }
+
+.connect-wallet{
+  padding: 10px 20px !important;
+}
+
+  .cursor {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background:linear-gradient(90deg, #7303C0 -7.55%, #EC38BC 99.16%, #F6AFE2 118.12%);
+    backdrop-filter: blur(20px);
+    pointer-events: none;
+    z-index: 111;
+    transition: all 0.3s ease-out;
+    animation: moveCursor1 .5s infinite alternate;
+}
+
+
+.navbar-nav{
+  display: flex;
+  gap: 12px;
+}
+.navbar .nav-link{
+  color: var(--secondary-color) !important;
+}
+.navbar .nav-link.active{
+  font-weight: bold;
+}
+
+.section_heading{
+  margin-bottom: 40px;
+  padding: 0px 20px;
+}
+
+.section_title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+
+/* Css for newsletter  */
+#brand_section svg path{
+  stroke: var(--secondary-color) !important;
+}
+#newsletter h3{
+  font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+}
+#newsletter form .input-wrapper{
+  position: relative;
+  width: 60%;
+  margin: auto;
+
+}
+#newsletter form .input-wrapper input{
+  transition: 1s;
+  position: relative;
+  padding: 9px 12px 9px 24px;
+  gap: 10px;
+  width: 100%;
+  min-height: 62px;
+  border: 1px solid #FFFFFF;
+  border-radius: 29px;
+  border: 1px solid var(--secondary-color);
+}
+#newsletter form .input-wrapper input:focus{
+  border: 1px solid var(--secondary-color) !important;
+
+}
+
+#newsletter p{
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+#newsletter form .input-wrapper button{
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translate(0px, -22px);
+  padding: 10px 20px!important;
+  width: fit-content;
+  border-radius: 39px;
+}
+
+ .collection_box_medium, .collection_box, .collecton_box_small {
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+/* Css for footer  */
+
+#footer{
+  border-top: 1px solid var(--secondary-color);
+}
+#footer p{
+ font-size: 14px;
+}
+
+#footer h3{
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+margin-bottom: 12px;
+}
+
+#footer ul{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#footer ul li{
+  list-style: none;
+  margin: 5px 0px;
+  opacity: 0.6;
+
+}
+#footer .footer-desc{
+  max-width: 370px;
+  width: 100%;
+}
+.footer-desc p{
+  opacity: 0.6;
+}
+#footer ul li a{
+font-family: 'satoshi';
+text-decoration: none;
+font-style: normal;
+font-size: 16px;
+line-height: 22px;
+color: var(--secondary-color);
+}
+
+@keyframes moveCursor1 {
+  from {
+      transform: scale(1);
+  }
+
+  to {
+      transform: scale(.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(2);
+  }
+
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.expand {
+  background: transparent;
+  animation: moveCursor2 .5s forwards;
+  border: 1px solid #000;
+}
+
+
+
+
+.theme-text-color *{
+  color: var(--secondary-color) !important;
+}
+.theme-text-color{
+  color: var(--secondary-color) !important;
+}
+
+.text-dark{
+  color: var(--primary-color) !important;
+}
+
+.bg-dark{
+  background: var(--primary-color) !important;
+}
+.bg-dark-50{
+  background: var(--dark-50);
+}
+.bg-danger{
+  background-color: var(--nav-button-bg);
+}
+.bg-btn{
+  background-color: var(--btn-bg) !important;
+}
+.light-bg{
+ background-color: var(--light-bg);
+}
+
+.border-gradient {
+
+}
+/* Overriding class  */
+.fill-theme-btn{
+	background:var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+}
+.fill-theme-btn *{
+  color: var(--btn-color) !important;
+}
+
+.border-theme-btn{
+	background:transparent;
+  border: 1px solid var(--secondary-color);
+}
+.border-theme-btn *{
+  color: var(--secondary-color) !important;
+}
+
+
+.btn-border svg *{
+  stroke: var(--secondary-color) !important;
+
+}
+.fill-theme-btn svg *{
+  stroke: var(--svg-color) !important;
+
+}
+.gap-64{
+  min-height: 64px;
+}
+.gap-40{
+  min-height: 40px;
+}
+
+section{
+  padding: 64px 0px;
+}
+
+
+/* Css for animated elemenst  */
+
+.animated_ball{
+  width: 142px;
+  height: 142px;
+  background-color: var(--shrink-color);
+  filter: blur(100px);
+  position: absolute;
+  animation: drift 12s linear infinite;
+
+}
+
+.animated_ball_2{
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  background-color: var(--shrink-color);
+  filter: blur(200px);
+  position: absolute;
+  animation: drift 10s linear infinite;
+
+}
+
+.shrink{
+  position: absolute;
+  background-color: var(--shrink-color);
+  height: 100%;
+  width: 15%;
+  filter: blur(80px);
+  position: absolute;
+  transition: 1.5s;
+  left: -50%;
+
+}
+/* Css for animated elemenst ended  */
+
+
+
+
+  /* Css for info cards  */
+
+  #info_cards .info_card{
+    background: var(--card-bg);
+    backdrop-filter: blur(25px);
+    border-radius: 16px;
+    padding: 16px;
+  
+  }
+  
+  #info_cards img{
+    padding: 15px;
+  }
+  
+  #info_cards  .info_heading{
+    font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  } 
+  #info_cards p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  /* or 24px */
+  text-align: center;
+  
+  color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .collection_box, .latest_update {
+    position: relative;
+  }
+  .collection_box .overlay, .latest_update .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(30, 38, 63, 0) 0%, rgba(20, 30, 54, 0.95) 100%);
+  }
+  .collection_box img{
+    object-fit: cover;
+    border-radius: 10px;
+  
+  }
+  .popular_collection .row:first-child{
+    margin-bottom: 15px;
+  }
+  .collection_box h4{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  }
+  .collection_box h4, .collection_box p, .latest_update h4, .latest_update span{
+    color: white !important;
+  }
+  
+  .latest_update img{
+    border-radius: 15px;
+  }
+  .latest_update  h4{
+    font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  }
+  
+
+
+
+  
+  .explore_section .nft_image> a img{
+    height: 164px;
+  }
+  
+  .nft_card img.thumb{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  
+  }
+  
+  
+  .user_image_box{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  .user_image_box > div{
+    display: flex;
+  }
+  
+  
+  .user_image_box img{
+    margin-left: -4px;
+  }
+  
+  .user_image_box{
+    margin-top: 20px;
+  }
+  
+  .user_image_box p{
+    opacity: .8;
+    font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  }
+  
+
+  /* Code for live auction section  */
+  #live_auction .row>div{
+    margin-bottom: 25px;
+  }
+
+  .nft_card{
+    position: relative;
+  border-radius: 12px;
+  padding: 32px;
+  overflow: hidden;
+  }
+  
+  .nft_card:hover .shrink{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	  animation: gradient 5s ease infinite;
+    transition: 1s;
+    /* left: 100%; */
+  } 
+
+
+
+  .nft_counter p{
+    font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  }
+  .nft_counter  h4{
+    font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  
+  /* identical to box height */
+  text-align: center;
+  
+  color: rgba(255, 255, 255, 0.8);
+  
+  
+  }
+  a.product_title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration: none;
+  
+  }
+  
+  .price_box{
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .user_image_box div img:nth-child(1)::after{
+    content: 'as';
+    height: 100%;
+    width: 100%;
+    background-color: red;
+  
+  
+  }
+  
+ /* /* Customizing nav atab / */
+ .nav-tabs {
+  border-bottom:none
+} 
+
+.nav-tabs li .nav-link{
+  background: transparent !important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+
+}
+#navbarSupportedContent svg path{
+  stroke: var(--secondary-color);
+}
+.tab-pane{
+  min-height: 450px;
+}
+
+.nav-tabs .nav-link.active{
+  /* background: var(--btn-bg) !important; */
+  color: var(--secondary-color) !important;
+  border:1px solid var(--secondary-color) !important;
+}
+
+.info_card  svg path{
+  stroke:var(--secondary-color);
+}
+
+
+
+.explore_section .tab-pane.active{
+  display: flex;
+  justify-content: center;
+}
+  /*Common  Animations  */
+  @keyframes drift {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+      100%{
+          left: 0%;
+      }
+  }
+  @keyframes gradient {
+    0% {
+      left: -50% ;
+          transition: 1s;
+    }
+    50% {
+      left: 100% ;
+          transition: 1s;
+  
+    }
+    100% {
+      left: -50%;
+          transition: 1s;
+  
+    }
+  }
+  
+
+    /* Common media query */
+  
+    @media screen and (max-width:1400px){
+      .section_title{
+        font-size: 30px !important;
+      }
+      p{
+        font-size: 14px !important;
+      }
+  
+      .collection_box h4, .nft_counter h4{
+        font-size: 18px;
+  
+      }
+  
+  
+      .collection_card_title{
+        font-size: 20px !important;
+        line-height: 30px !important;
+      }
+  
+      .gap-64{
+        height: 30px;
+      }
+    }
+    @media screen and (max-width:1200px){
+      section {
+        padding: 40px 0px !important;
+      
+      }
+      .section_title{
+        font-size: 28px !important;
+      }
+      
+      #info_cards .info_heading{
+        font-size: 16px !important;
+      }
+  
+      a.product_title{
+        font-size: 14px !important;
+      }
+      .nft_card{
+        padding: 15px !important;
+      }
+  
+    }
+    @media screen and (max-width:1024px){
+      .section_title{
+        font-size: 24px !important;
+      }
+  
+      
+      .collection_box h4, .nft_counter h4{
+        font-size: 16px !important;
+      }
+      .section_heading{
+        margin-bottom: 0px !important;
+      }
+    }
+    @media screen and (max-width:992px){
+      main{
+        margin-top: 80px;
+    }
+
+      .nav-link {
+        padding: 4px 8px !important;
+      }
+  
+      .collection_box h4, .nft_counter h4{
+        font-size: 14px !important;
+      }
+  
+      .author_info{
+        margin-bottom: 9px;
+      }
+      .author_info span{
+        font-size: 12px !important;
+      }
+      .collection_card_title{
+        font-size: 16px !important;
+        line-height: 21px !important;
+        font-weight: normal;
+      }
+      .latest_update img:last-child{
+        min-height: 250px;
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      .input-wrapper button{
+        font-size: 12px;
+        top: 53% !important;
+      }
+      .input-wrapper input{
+        min-height: unset !important;
+        padding: 10px;
+  
+      }
+      .input-wrapper input::placeholder{
+        font-size: 10px !important;
+  
+      }
+  
+      #myTab button{
+        font-size: 14px !important;
+      }
+      #brand_section .row>div{
+        width: 145px;
+      }
+    }
+    @media screen and (max-width:768px){
+  
+      section {
+        padding: 20px 0px !important;
+      }
+  
+      .section_title{
+        font-size: 22px !important;
+      }
+      #newsletter form .input-wrapper{
+        width: 100% !important;
+    }
+  
+    }
