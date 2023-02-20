@@ -21,6 +21,7 @@ body,section,div,h1,h2,h3,h4,h5,h6,p.span,b{
   }
   main{
     min-height: 100vh;
+    overflow-x: hidden;
   }
   p{
     margin: 0px;
